@@ -9,9 +9,9 @@ function Product({product}){
             <a href={`/product/${product._id}`}>
                 <Card.Img src={product.image} /> 
             </a>
-            <CARD.Body>
+            <Card.Body>
                 <a href="{`/product/${product._id}`}">
-                    <Card.Title as="div"><strong>{product.name}</strong></Card.Title>
+                    <Card.Title as="div"><h3>{product.name}</h3></Card.Title>
                 </a>
                 <Card.Text as="div" >
                     <div className="my-3">
@@ -21,7 +21,7 @@ function Product({product}){
                 <Card.Text as="div" >
                     ${product.price}
                 </Card.Text>
-            </CARD.Body>
+            </Card.Body>
         </Card>
     )
 }
