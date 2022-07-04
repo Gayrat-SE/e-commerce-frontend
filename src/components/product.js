@@ -1,24 +1,25 @@
 import React from "react"
 
 import { Card } from "react-bootstrap"
+import Rating  from "./Rating"
 
 
 function Product({product}){
     return (
-        <Card className="my-5 p-2 rounded w-50 ">
+        <Card className="my-5 p-2 rounded">
             <a href={`/product/${product._id}`}>
-                <Card.Img src={product.image} /> 
+                <Card.Img className="img-size" src={product.image} /> 
             </a>
             <Card.Body>
-                <a href="{`/product/${product._id}`}">
-                    <Card.Title as="div"><h3>{product.name}</h3></Card.Title>
+                <a href={`/product/${product._id}`}>
+                    <Card.Title as="h5"><strong>{product.name}</strong></Card.Title>
                 </a>
                 <Card.Text as="div" >
-                    <div className="my-3">
-                        {product.rating} from {product.numReviews} reviews
+                    <div className="my-2">
+                        <Rating value={product.rating} text={`${product.numReviews} reviews `} color={'#f8e825'}/>
                     </div>
                 </Card.Text>
-                <Card.Text as="div" >
+                <Card.Text as="h3" >
                     ${product.price}
                 </Card.Text>
             </Card.Body>

@@ -1,0 +1,24 @@
+main {
+    min-height: 80vh;
+}
+
+h3 {
+    padding: 1rem 0;
+}
+
+.rating span {
+    margin: 0.1rem;
+}
+
+.img-size{
+    width: 150px;
+    height: 300px;
+}
+
+.fas, .far {
+    font-size: 18px;
+}
+.text-size{
+    padding-left: 40px;
+    font-size: 18px;
+}
