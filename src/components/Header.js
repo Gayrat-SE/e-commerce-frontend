@@ -1,11 +1,13 @@
 import React from 'react';
 import {Container, Nav, Button, Navbar, Form, FormControl} from 'react-bootstrap';
-
+import {LinkContainer} from 'react-router-bootstrap'
 function Header(){
     return(
         <Navbar bg="light" expand="lg">
             <Container>
-                <Navbar.Brand href="#">JustShop</Navbar.Brand>
+                <LinkContainer to="/">
+                    <Navbar.Brand href="#">JustShop</Navbar.Brand>
+                </LinkContainer> 
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                 <Nav
