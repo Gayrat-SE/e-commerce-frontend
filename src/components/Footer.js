@@ -4,8 +4,8 @@ function Footer() {
     return (
         <footer>
             <Container>
-                <Row>
-                    <Col className='text-center py-3'>
+                <Row className='bg-dark'>
+                    <Col className='text-center py-3 fixed-bottom bg-dark text-light mt-3'>
                         Copyright &copy; {new Date().getFullYear()}
                     </Col>
                 </Row>

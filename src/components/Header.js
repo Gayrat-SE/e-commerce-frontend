@@ -3,7 +3,7 @@ import {Container, Nav, Button, Navbar, Form, FormControl} from 'react-bootstrap
 import {LinkContainer} from 'react-router-bootstrap'
 function Header(){
     return(
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" className="fixed-top">
             <Container>
                 <LinkContainer to="/">
                     <Navbar.Brand href="#">JustShop</Navbar.Brand>
